@@ -1,0 +1,40 @@
+{% extends "base.html" %}
+{% block content %}
+
+<section class="vh-100">
+  <div class="container py-5 h-100">
+<form method="post">
+  <!-- Name input -->
+  <div class="form-outline mb-4">
+    <input type="text" name="uname" class="form-control" />
+    <label class="form-label" for="uname">Usuario</label>
+  </div>
+
+  <!-- Email input -->
+  <div class="form-outline mb-4">
+    <input type="email" name="mail" class="form-control" />
+    <label class="form-label" for="mail">Email</label>
+  </div>
+
+   <!-- Pass input -->
+   <div class="form-outline mb-4">
+    <input type="password" name="passw" class="form-control" />
+    <label class="form-label" for="passw">Contraseña</label>
+  </div>
+
+  <!-- Checkbox -->
+  <div class="form-check d-flex justify-content-center mb-4">
+    <input class="form-check-input me-2" type="checkbox" value="" id="form5Example3" checked />
+   
+  </div>
+
+  <!-- Submit button -->
+  <button type="submit" class="btn btn-primary btn-block mb-4">Registrarse</button>
+</form>
+</div>
+</section>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+{% endblock  %}
