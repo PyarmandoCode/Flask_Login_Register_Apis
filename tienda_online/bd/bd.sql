@@ -149,5 +149,51 @@ ALTER TABLE public.user_payment
     ADD FOREIGN KEY (user_id)
     REFERENCES public.Users (id)
     NOT VALID;
+    
+insert into discount(id,discount) values(1,10);
+insert into discount(id,discount) values(2,10);
+insert into discount(id,discount) values(3,10);
+insert into discount(id,discount) values(4,10);
+insert into discount(id,discount) values(5,10);
+insert into discount(id,discount) values(6,10);
+insert into discount(id,discount) values(7,10);
+insert into discount(id,discount) values(8,10);
+insert into discount(id,discount) values(9,10);
+insert into discount(id,discount) values(10,10);
+
+
+insert into inventory(id,quantity) values(1,100);
+insert into inventory(id,quantity) values(2,500);
+insert into inventory(id,quantity) values(3,110);
+insert into inventory(id,quantity) values(4,120);
+insert into inventory(id,quantity) values(5,130);
+insert into inventory(id,quantity) values(6,140);
+insert into inventory(id,quantity) values(7,150);
+insert into inventory(id,quantity) values(8,1000);
+insert into inventory(id,quantity) values(9,2210);
+insert into inventory(id,quantity) values(10,7810);
+
+insert into product_category(id,name,description) values(10,'CASACAS','CASACAS');
+insert into product_category(id,name,description) values(20,'PANTALONES','PANTALONES');
+insert into product_category(id,name,description) values(30,'CAMISAS','CAMISAS');
+insert into product_category(id,name,description) values(40,'ZAPATOS','ZAPATOS');
+insert into product_category(id,name,description) values(50,'ZAPATILLAS','ZAPATILLAS');
+insert into product_category(id,name,description) values(60,'MEDIAS','MEDIAS');
+insert into product_category(id,name,description) values(70,'BUZOS','BUZOS');
+
+
+Insert into products(id,name,description,stock_code,category_id,inventory_id,price,discount_id)
+values(1,'CASACAS DE HOMBRE','CASACAS DE HOMBRE','100',10,1,120.0,1);
+Insert into products(id,name,description,stock_code,category_id,inventory_id,price,discount_id)
+values(2,'CASACAS DE HOMBRE','CASACAS DE HOMBRE','120',10,1,120.0,1);
+Insert into products(id,name,description,stock_code,category_id,inventory_id,price,discount_id)
+values(3,'CASACAS DE HOMBRE','CASACAS DE HOMBRE','50',10,1,120.0,1);
+Insert into products(id,name,description,stock_code,category_id,inventory_id,price,discount_id)
+values(4,'PANTALONES DE HOMBRE','PANTALONES DE HOMBRE','50',10,1,120.0,1);
+Insert into products(id,name,description,stock_code,category_id,inventory_id,price,discount_id)
+values(5,'PANTALONES DE MUJER','PANTALONES DE MUJER','50',10,1,120.0,1);
+Insert into products(id,name,description,stock_code,category_id,inventory_id,price,discount_id)
+values(6,'PANTALONES DE NIÑO','PANTALONES DE NIÑO','50',10,1,120.0,1);    
+    
 
 END;
